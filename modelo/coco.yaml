@@ -1,0 +1,7 @@
+train: CAMINHO_ATÉ_TREINO
+test: CAMINHO_ATÉ_TESTE
+val: CAMINHO_ATÉ_VALID
+
+nc: 2
+
+names: ["fovea", "optic_disk"]
