@@ -38,7 +38,7 @@ Acessar a pasta do modelo
 ```
 cd yolov11
 ```
-### Treinamento
+### Treinamento (Opcional)
 Ajustar o dataset dentro do arquivo coco.yaml
 ```
 python train.py
@@ -46,6 +46,19 @@ python train.py
 ### Gerar as coordenadas das classes
 ```
 python predict.py
+cd ..
+```
+
+### Extrair região de interesse
+Gerar arquivo com as coordenadas do centro da fóvea
+```
+cd extract_roi
+python generate_fovea_center.py
+```
+
+Gera região de interesse
+```
+python generate_roi.py
 ```
 
 ## Autores
