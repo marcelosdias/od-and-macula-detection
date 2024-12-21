@@ -1,4 +1,4 @@
-## Trabalho para cadeira de Aprendizado de máquina do PPGC
+## Trabalho para cadeira de Aprendizado de máquina do PPGC da UFPEL
 Implementação de um pipeline para extração de regiões de interesse em imagens de fundo de olho, utilizando a mácula como região alvo.
 
 ## Instalação
@@ -8,6 +8,8 @@ conda activate yolov11
 pip install -r requirements.txt
 pip install -e .
 ```
+## Modelo
+- [Baixe o modelo deselvolvido](https://github.com/marcelosdias/od-and-macula-detection/releases/download/modelo/model.pt)
 
 ## Pré-processamento
 Remoção parcial do fundo preto
