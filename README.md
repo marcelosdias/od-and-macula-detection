@@ -12,31 +12,40 @@ pip install -e .
 ## Pré-processamento
 Remoção parcial do fundo preto
 ```
-python ./pre_processing/cropping/main.py
+cd pre_processing/cropping
+python main.py
+cd ..
 ```
 Aplicação dos filtros de imagem
 ```
-python ./pre_processing/filters/main.py
+cd filters
+python main.py
+cd ../..
 ```
-Conversão das anotações para o formato YOLO
+## Conversão das anotações para o formato YOLO
 ```
-python ./JSON2YOLO/filters/general_json2yolo.py
+cd pre_processing/JSON2YOLO
+python general_json2yolo.py
+cd ../..
 ```
-Geração dos K-folds
+## Geração dos K-folds
 ```
 python ./cross_validate/main.py
+cd ..
 ```
-Treinamento do modelo
+## YOLOV11
+Acessar a pasta do modelo
 ```
-python ./model/train.py
+cd yolov11
 ```
-Teste do modelo
+### Treinamento
+Ajustar o dataset dentro do arquivo coco.yaml
 ```
-python ./model/test.py
+python train.py
 ```
-Predição com o modelo
+### Gerar as coordenadas das classes
 ```
-python ./model/predict.py
+python predict.py
 ```
 
 ## Autores
